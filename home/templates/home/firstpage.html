@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+</head>
+
+<body class="one"style="background-image:url('static/images/car-pics.jpg')" >
+    <div class="main-container">
+        <div class="navbar_container">
+            <div class="left">
+                <img src="{% static 'images/logo.png' %}" height="50px" alt="" />
+            </div>
+            <div class="right">
+                <div><a href="{% url 'abouthome' %}"><p style="color:white" >About Us</p></a></div>
+                <div><a href="{% url 'contacthome' %}"><p style="color:white">Contact Us</p></a></div>
+                <div><a href="{% url 'indexhome' %}"><p style="color:white">Explore Now.!</p></a></div>
+            </div>
+        </div>
+        <div class="hero__container">
+            <div class="content">
+                <br><br><br><br><br><br><h1>ELITE CAR RENTALS</h1>
+                <p>
+                   Self drive car rentals.Delivered to your doorsteps
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
